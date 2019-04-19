@@ -6,9 +6,11 @@ function SaltySpittoon(){
   return(
     <div>
       <style jsx> {`
-          width: 200px;
-          height: auto;
-          text-align: center;
+        width: auto;
+        height: auto;
+        text-align: center;
+        min-width:auto;
+        min-height:30vh;
 			`}
       </style>
       <img src={saltySpittoon} alt="Salty Spittoon Image"></img>

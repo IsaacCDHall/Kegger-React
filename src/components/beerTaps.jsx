@@ -29,11 +29,12 @@ function Beers(props){
           display: flex;
           flex-flow: row wrap;
           text-align:center;
-          width: 100%;
+          width: auto;
+          height:auto;
           // background-color: red;
           justify-content: center;
           margin: 10px 35px 0 0;
-          border: none;
+          border: 1px solid red;
         }
 
         `}

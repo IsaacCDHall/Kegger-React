@@ -1,13 +1,11 @@
 import React from 'react';
 import Splash from './Splash';
-import Footer from './Footer';
 import Links from './Links';
 import Icon from './Icon';
-import Sand from './Bg';
+// import Sand from './Bg';
 import Login from './Login';
 import Register from './Register';
 import DisplayBeer from './DisplayBeer';
-import Minor from './Minor';
 import ErrFour from './ErrFour';
 import { library } from '@fortawesome/fontawesome-svg-core';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -45,7 +43,6 @@ function App(){
         <Route exact path ='/Login' component={Login}/>
         <Route exact path ='/Register' component={Register} />
         <Route exact path ='/TapList' component={DisplayBeer}/>
-        <Route exact path ='/KombuchaTapList' component={Minor} />
         <Route exact path ='/displayproduce' component={DisplayProduce}/>
       </Switch>
 
