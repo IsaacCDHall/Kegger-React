@@ -1,20 +1,22 @@
 import React from 'react';
-import sand from '../assets/images/sand.jpg';
-function Bg(){
+import sand from '../assets/images/weenie-hut.png';
+function Weenie(){
 
 
   return(
     <div>
       <style jsx> {`
-          width: 100vw;
-          height: auto;
-          text-align: center;
+        width: auto;
+        height: auto;
+        text-align: center;
+        min-width:auto;
+        min-height:30vh;
 			`}
       </style>
-      <img src={sand} alt="Background Image of sand"></img>
+      <img src={sand} alt="Weenie Hut"></img>
 
     </div>
   );
 }
 
-export default Bg;
+export default Weenie;

@@ -6,6 +6,7 @@ import Icon from './Icon';
 import Login from './Login';
 import Register from './Register';
 import DisplayBeer from './DisplayBeer';
+import DisplayKombucha from './DisplayKombucha';
 import ErrFour from './ErrFour';
 import { library } from '@fortawesome/fontawesome-svg-core';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -26,13 +27,18 @@ function App(){
   return (
     <div>
       <style jsx global>{`
+          *{
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+          }
           body {
             background-color: tan;
             margin: 0;
             padding: 0;
-            color: #FFF;
-            height: 90vh;
-            width: 100vw;
+            color: whitesmoke;
+            height: 100%;
+            width: 100%;
           }
         `}</style>
       <Links/>
@@ -42,8 +48,8 @@ function App(){
         <Route exact path ='/' component={Splash}/>
         <Route exact path ='/Login' component={Login}/>
         <Route exact path ='/Register' component={Register} />
-        <Route exact path ='/TapList' component={DisplayBeer}/>
-        <Route exact path ='/displayproduce' component={DisplayProduce}/>
+        <Route exact path ='/Beer_On_Tap' component={DisplayBeer}/>
+        <Route exact path ='/Kombucha_On_Tap' component={DisplayKombucha}/>
       </Switch>
 
     </div>

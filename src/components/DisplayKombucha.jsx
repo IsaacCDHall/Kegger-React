@@ -1,30 +1,30 @@
 import React from 'react';
-import SaltySpittoon from './SpittoonHeader';
-import Beers from './BeerTaps';
-import beerList from '../model/beerList.js';
+import Weenie from './WeenieHeader';
+import NotBeer from './KombuchaTaps';
+import kombuchaList from '../model/kombuchaList.js';
 
 
 // console.log(availableProduce);
-function DisplayBeer(){
+function DisplayKombucha(){
   return(
     <div>
       <style jsx>{`
         section{
           // padding:10px;
           display: grid;
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: repeat(1, 1fr);
           grid-gap: 2%;
-          margin:auto;
           max-width:75vw;
+          margin:auto;
           // overflow:hidden;
         }
         `}
       </style>
-      <SaltySpittoon/>
+      <Weenie/>
       <section>
-        {beerList.map((bev, index) =>
-          <Beers
-            name={bev.beerName}
+        {kombuchaList.map((bev, index) =>
+          <NotBeer
+            name={bev.drinkName}
             details={bev.details}
             key={index}
           />
@@ -35,4 +35,4 @@ function DisplayBeer(){
   );
 }
 
-export default DisplayBeer;
+export default DisplayKombucha;
