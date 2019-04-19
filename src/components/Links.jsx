@@ -19,13 +19,16 @@ function Links() {
             display: flex;
             justify-content: flex-end;
             flex-flow:column wrap;
-						width: 7rem;
+						width: 6rem;
             text-decoration: none;
             font-family: 'Allerta', sans-serif;
             padding-left: 1rem;
-            color: #FFF;
-            font-size: 1rem;
+            // color: #EF8726;
+            // color: #29A0C3;
+            color: #FCFD46;
+            font-size: 1.1rem;
             list-style: none;
+            transition: color .8s ease;
 
 					}
           h1{
@@ -35,18 +38,21 @@ function Links() {
           }
 
           a:hover{
-            color: #FCFD46;
+            color: #EF8726;
           }
 
 				`}</style>
       <Link to="/" style={{ textDecoration: 'none' }}>
-        <a>#Home</a>
+        <a>Home</a>
       </Link>
       <Link to="/DisplayProduce" style={{ textDecoration: 'none' }}>
-        <a>#Snack Fest</a>
+        <a>Login</a>
       </Link>
       <Link to="/DisplayProduce" style={{ textDecoration: 'none' }}>
-        <a>#Produce</a>
+        <a>Register</a>
+      </Link>
+      <Link to="/DisplayProduce" style={{ textDecoration: 'none' }}>
+        <a>Tap List</a>
       </Link>
 
 
