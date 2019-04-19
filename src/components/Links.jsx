@@ -31,6 +31,7 @@ function Links() {
             transition: color .8s ease;
 
 					}
+
           h1{
             font-family: 'Monoton', cursive;
             color: gold;
@@ -45,10 +46,10 @@ function Links() {
       <Link to="/" style={{ textDecoration: 'none' }}>
         <a>Home</a>
       </Link>
-      <Link to="/DisplayProduce" style={{ textDecoration: 'none' }}>
+      <Link to="/Login" style={{ textDecoration: 'none' }}>
         <a>Login</a>
       </Link>
-      <Link to="/DisplayProduce" style={{ textDecoration: 'none' }}>
+      <Link to="/Register" style={{ textDecoration: 'none' }}>
         <a>Register</a>
       </Link>
       <Link to="/DisplayProduce" style={{ textDecoration: 'none' }}>
