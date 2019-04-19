@@ -52,8 +52,11 @@ function Links() {
       <Link to="/Register" style={{ textDecoration: 'none' }}>
         <a>Register</a>
       </Link>
-      <Link to="/TapList" style={{ textDecoration: 'none' }}>
-        <a>Tap List</a>
+      <Link to="/Beer_On_Tap" style={{ textDecoration: 'none' }}>
+        <a>Beer</a>
+      </Link>
+      <Link to="/Kombucha_On_Tap" style={{ textDecoration: 'none' }}>
+        <a>Kombucha</a>
       </Link>
 
 
