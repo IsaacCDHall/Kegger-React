@@ -1,7 +1,8 @@
 import React from 'react';
-import Body from './Body';
-import Header from './Header';
+import Splash from './Splash';
 import Footer from './Footer';
+import Links from './Links';
+import Icon from './Icon';
 import { library } from '@fortawesome/fontawesome-svg-core';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStroopwafel } from '@fortawesome/free-solid-svg-icons';
@@ -28,13 +29,15 @@ function App(){
             color: #FFF;
           }
         `}</style>
-      <Header/>
-
+      <Links/>
+      <Icon/>
+      <br/>
+      <br/>
       <Switch>
-        <Route exact path ='/' component={Body} />
+        <Route exact path ='/' component={Splash} />
         <Route exact path ='/displayproduce' component={DisplayProduce} />
       </Switch>
-      <Footer/>
+
     </div>
   );
 }

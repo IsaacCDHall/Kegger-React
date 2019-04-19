@@ -13,13 +13,17 @@ function Icon(){
             margin-top: -2rem;
 					}
 					i {
-						padding-right: 5px;
+						padding-right: 15px;
 						padding-left: 5px;
 					}
+          i:hover{
+            color: #FCFD46;
+            cursor: pointer;
+          }
 
 			`}</style>
-      <i className="fab fa-facebook-f fa-3x"></i>
-      <i className="fab fa-instagram fa-3x"></i>
+    <i className="fab fa-facebook-f fa-2x"></i>
+      <i className="fab fa-instagram fa-2x"></i>
     </div>
   );
 }

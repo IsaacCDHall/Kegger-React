@@ -35,7 +35,7 @@ function Links() {
           }
 
           a:hover{
-            color: #42e8de;
+            color: #FCFD46;
           }
 
 				`}</style>
