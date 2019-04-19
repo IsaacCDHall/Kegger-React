@@ -3,7 +3,7 @@ const beerList = [
     beerName: 'pruno',
     details: [
       'Isaac\'s Toilet',
-      '5% Alcohol By Volume',
+      '5% abv',
       '100oz Remaining'
     ],
     brewery: 'Isaac\'s Toilet',
@@ -14,7 +14,7 @@ const beerList = [
     beerName: 'pruno1',
     details: [
       'Isaac\'s Toilet',
-      '5% Alcohol By Volume',
+      '5% abv',
       '99oz Remaining'
     ],
     brewery: 'Isaac\'s Toilet',
@@ -25,7 +25,7 @@ const beerList = [
     beerName: 'pruno2',
     details: [
       'Isaac\'s Toilet',
-      '5% Alcohol By Volume',
+      '5% abv',
       '95oz Remaining'
     ],
     brewery: 'Isaac\'s Toilet',
@@ -36,7 +36,7 @@ const beerList = [
     beerName: 'pruno3',
     details: [
       'Isaac\'s Toilet',
-      '5% Alcohol By Volume',
+      '5% abv',
       '90oz Remaining'
     ],
     brewery: 'Isaac\'s Toilet',
@@ -47,7 +47,7 @@ const beerList = [
     beerName: 'pruno4',
     details: [
       'Isaac\'s Toilet',
-      '5% Alcohol By Volume',
+      '5% abv',
       '80oz Remaining'
     ],
     brewery: 'Isaac\'s Toilet',
@@ -58,7 +58,7 @@ const beerList = [
     beerName: 'pruno5',
     details: [
       'Isaac\'s Toilet',
-      '5% Alcohol By Volume',
+      '5% abv',
       '100oz Remaining'
     ],
     brewery: 'Isaac\'s Toilet',
@@ -69,7 +69,7 @@ const beerList = [
     beerName: 'pruno6',
     details: [
       'Isaac\'s Toilet',
-      '5% Alcohol By Volume',
+      '5% abv',
       '60oz Remaining'
     ],
     brewery: 'Isaac\'s Toilet',
@@ -80,7 +80,7 @@ const beerList = [
     beerName: 'pruno777',
     details: [
       'Isaac\'s Toilet',
-      '100% Alcohol By Volume',
+      '100% abv',
       '7.3oz Remaining'
     ],
     brewery: 'Isaac\'s Toilet',
