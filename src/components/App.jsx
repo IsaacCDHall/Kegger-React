@@ -3,6 +3,7 @@ import Splash from './Splash';
 import Footer from './Footer';
 import Links from './Links';
 import Icon from './Icon';
+import Sand from './Bg';
 import { library } from '@fortawesome/fontawesome-svg-core';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStroopwafel } from '@fortawesome/free-solid-svg-icons';
@@ -20,10 +21,11 @@ import { Switch, Route } from 'react-router-dom';
 
 function App(){
   return (
-    <div>
+    <div style = {{backgroundImage: 'url(' + Sand + ')'}}>
       <style jsx global>{`
           body {
-            background-color: black;
+            background-image: url(' + Sand');
+            // background-color: black;
             margin: 0;
             padding: 0;
             color: #FFF;
