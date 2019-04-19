@@ -4,6 +4,11 @@ import Footer from './Footer';
 import Links from './Links';
 import Icon from './Icon';
 import Sand from './Bg';
+import Login from './Login';
+import Register from './Register';
+import Adult from './Adult';
+import Minor from './Minor';
+import ErrFour from './ErrFour';
 import { library } from '@fortawesome/fontawesome-svg-core';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStroopwafel } from '@fortawesome/free-solid-svg-icons';
@@ -36,8 +41,12 @@ function App(){
       <Icon/>
       <br/>
       <Switch>
-        <Route exact path ='/' component={Splash} />
-        <Route exact path ='/displayproduce' component={DisplayProduce} />
+        <Route exact path ='/' component={Splash}/>
+        <Route exact path ='/Login' component={Login}/>
+        <Route exact path ='/Register' component={Register} />
+        <Route exact path ='/TapList' component={Adult}/>
+        <Route exact path ='/KombuchaTapList' component={Minor} />
+        <Route exact path ='/displayproduce' component={DisplayProduce}/>
       </Switch>
 
     </div>
