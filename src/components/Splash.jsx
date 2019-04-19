@@ -1,5 +1,4 @@
 import React from 'react';
-import DisplaySchedule from './DisplaySchedule';
 import Pineapple from './Pineapple';
 import SplashHeader from './SplashHeader';
 

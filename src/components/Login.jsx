@@ -10,7 +10,7 @@ function Login(){
         color:#29A0C3;
 			`}
       </style>
-    <SplashHeader/>
+      <SplashHeader/>
       <h1>Login Page</h1>
 
     </div>
