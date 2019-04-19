@@ -1,4 +1,5 @@
 import React from 'react';
+import SaltySpittoon from './SpittoonHeader';
 import Beers from './BeerTaps';
 import beerList from '../model/beerList.js';
 
@@ -8,7 +9,7 @@ function DisplayBeer(){
   return(
     <div>
       <style jsx>{`
-        div{
+        section{
           padding:10px;
           display: grid;
           grid-template-columns: repeat(3, 1fr);
@@ -18,13 +19,16 @@ function DisplayBeer(){
         }
         `}
       </style>
-      {beerList.map((bev, index) =>
-        <Beers
-          beerName={bev.name}
-          details={bev.details}
-          key={index}
-        />
-      )}
+      <SaltySpittoon/>
+      <section>
+        {beerList.map((bev, index) =>
+          <Beers
+            name={bev.beerName}
+            details={bev.details}
+            key={index}
+            />
+        )}
+      </section>
     </div>
 
   );
