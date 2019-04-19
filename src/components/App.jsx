@@ -21,19 +21,19 @@ import { Switch, Route } from 'react-router-dom';
 
 function App(){
   return (
-    <div style = {{backgroundImage: 'url(' + Sand + ')'}}>
+    <div>
       <style jsx global>{`
           body {
-            background-image: url(' + Sand');
-            // background-color: black;
+            background-color: tan;
             margin: 0;
             padding: 0;
             color: #FFF;
+            height: 90vh;
+            width: 100vw;
           }
         `}</style>
       <Links/>
       <Icon/>
-      <br/>
       <br/>
       <Switch>
         <Route exact path ='/' component={Splash} />

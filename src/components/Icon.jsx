@@ -15,9 +15,10 @@ function Icon(){
 					i {
 						padding-right: 15px;
 						padding-left: 5px;
+            transition: color .3s ease;
 					}
           i:hover{
-            color: #FCFD46;
+            color: #EF8726;
             cursor: pointer;
           }
 

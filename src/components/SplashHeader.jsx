@@ -9,6 +9,8 @@ function SplashHeader(){
           width: auto;
           height: auto;
           text-align: center;
+          min-width:auto;
+          min-height:30vh;
 			`}
       </style>
       <img src={splashHeader} alt="Kegger Taproom Logo"></img>
