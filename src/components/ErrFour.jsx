@@ -13,7 +13,9 @@ function errFour(){
           height: auto;
 			`}
       </style>
-      <p> fuckshitBITCH YEA IM SHECK WES </p>
+
+      <h1> error</h1>
+
 
     </div>
   );
