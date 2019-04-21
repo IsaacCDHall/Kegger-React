@@ -13,7 +13,9 @@ function errFour(){
           height: auto;
 			`}
       </style>
+
       <h1> error</h1>
+
 
     </div>
   );
