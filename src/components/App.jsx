@@ -11,7 +11,6 @@ import ErrFour from './ErrFour';
 import { library } from '@fortawesome/fontawesome-svg-core';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStroopwafel } from '@fortawesome/free-solid-svg-icons';
-import DisplayProduce from './DisplayProduce';
 
 library.add(faStroopwafel);
 // import Body from './Body';
