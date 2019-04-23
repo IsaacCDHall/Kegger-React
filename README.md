@@ -53,7 +53,11 @@ This is my most recent project! I have created an original design inspired by th
 ### Notes
 
 * Weenie Shape divs in underage kombucha list
-
+* Would love to change menu design to a crabby patty
+  * Maybe add bubbles to the splash page on window click that float to the hamburger to direct user's to the menu
+  * Could also create bubbles which emit from the burger for same reason^
+* Change font-type in splashHeader
+* Change arrow color
 
 ### Installation
 
