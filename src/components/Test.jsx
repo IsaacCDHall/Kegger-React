@@ -18,7 +18,7 @@ function HookCounter (){
         `}
       </style>
 
-      <div>Pints Remaining: {this.state.count}</div>
+      <div>Pints Remaining: {count}</div>
       <i onClick={() => setCount(count + 1)} className="fas fa-angle-up fa-2x"></i>
       <i onClick={() => setCount(count - 1)} className="fas fa-angle-down fa-2x"></i>
     </div>

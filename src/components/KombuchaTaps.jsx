@@ -5,7 +5,6 @@ import React, { useState } from 'react';
 function NotBeer(props){
 
   console.log(props);
-
   return (
     <div>
       <style jsx>{`
@@ -34,20 +33,19 @@ function NotBeer(props){
         `}
       </style>
       <h3>{props.name}</h3>
-
       <div className='divStyles'>
 
         {
           props.details.map((bev,i)=>{
-            console.log(props.volume);
             return <p key={i}>{bev}</p>;
           })
         }
         <br/>
-        <Counter initialVolume={124}/>
+        <Counter/>
       </div>
 
     </div>
+
   );
 }
 

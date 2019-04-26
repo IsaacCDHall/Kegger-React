@@ -1,10 +1,12 @@
-import React from 'react';
 import Weenie from './WeenieHeader';
 import NotBeer from './KombuchaTaps';
 import kombuchaList from '../model/kombuchaList.js';
+import Counter from './Counter';
+import React, { useState } from 'react';
 
 // console.log(availableProduce);
 function DisplayKombucha(){
+
   return(
     <div>
       <style jsx>{`
@@ -26,7 +28,6 @@ function DisplayKombucha(){
             name={bev.drinkName}
             details={bev.details}
             key={index}
-            volume={bev.volume}
           />
         )}
       </section>
