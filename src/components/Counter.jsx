@@ -1,5 +1,4 @@
-import React from "react";
-import PropTypes from 'prop-types';
+import React from 'react';
 import kombuchaList from '../model/kombuchaList.js';
 
 export default class Counter extends React.Component {
@@ -24,13 +23,13 @@ export default class Counter extends React.Component {
     this.setState({
       count: this.state.count + 1
     });
-  };
+  }
 
   decrement() {
     this.setState({
       count: this.state.count - 1
     });
-  };
+  }
 
   render() {
     return (

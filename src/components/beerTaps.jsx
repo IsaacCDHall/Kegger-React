@@ -55,7 +55,8 @@ function Beers(props){
 
 Beers.propTypes = {
   name: PropTypes.string.isRequired,
-  details: PropTypes.array
+  details: PropTypes.array,
+  volume: PropTypes.number
 };
 
 export  default Beers;

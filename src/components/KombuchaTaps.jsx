@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Counter from './Counter';
+import React, { useState } from 'react';
 
 function NotBeer(props){
 
   console.log(props);
-
 
   return (
     <div>
@@ -40,7 +39,7 @@ function NotBeer(props){
 
         {
           props.details.map((bev,i)=>{
-            console.log(props.volume)
+            console.log(props.volume);
             return <p key={i}>{bev}</p>;
           })
         }
@@ -55,7 +54,7 @@ function NotBeer(props){
 NotBeer.propTypes = {
   name: PropTypes.string.isRequired,
   details: PropTypes.array,
-  volume: PropTypes.number
+  volume: PropTypes.string
 };
 
-export  default NotBeer;
+export default NotBeer;
