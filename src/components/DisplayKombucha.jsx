@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 
 // console.log(availableProduce);
 function DisplayKombucha(){
-
+  console.log(Counter);
   return(
     <div>
       <style jsx>{`
@@ -28,6 +28,7 @@ function DisplayKombucha(){
             name={bev.drinkName}
             details={bev.details}
             key={index}
+            volume={bev.volume}
           />
         )}
       </section>

@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
+import kombuchaList from '../model/kombuchaList.js';
+import PropTypes from 'prop-types';
 
-function Counter (){
-
-  let [count, setCount] = useState(100);
-  console.log(useState);
+function Counter ({initialVolume}){
+  
+  let [count, setCount] = useState(initialVolume);
+  console.log(count);
 
   return (
     <div>
-    <style jsx>{`
+      <style jsx>{`
       .fa-angle-down{
         margin-left: 20px;
       }
@@ -20,11 +22,14 @@ function Counter (){
       <div>Pints Remaining: {count}</div>
       <i onClick={() => setCount(count + 1)} className="fas fa-angle-up fa-2x"></i>
       <i onClick={() => setCount(count - 1)} className="fas fa-angle-down fa-2x"></i>
-      </div>
-    );
-  }
+    </div>
+  );
+}
+Counter.propTypes = {
+  initialVolume: PropTypes.number.isRequired
+};
 
-  export default Counter;
+export default Counter;
 // import React from 'react';
 // import kombuchaList from '../model/kombuchaList.js';
 //

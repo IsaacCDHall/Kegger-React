@@ -41,7 +41,9 @@ function NotBeer(props){
           })
         }
         <br/>
-        <Counter/>
+          <Counter
+            initialVolume={props.volume}
+          />
       </div>
 
     </div>
@@ -52,7 +54,7 @@ function NotBeer(props){
 NotBeer.propTypes = {
   name: PropTypes.string.isRequired,
   details: PropTypes.array,
-  volume: PropTypes.string
+  volume: PropTypes.number
 };
 
 export default NotBeer;

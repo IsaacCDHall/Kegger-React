@@ -6,7 +6,7 @@ const kombuchaList = [
       'fruity, bright'
     ],
     brewery: 'Isaac\'s friend',
-    volume: '100oz Remaining',
+    volume: '124',
   },
   {
     drinkName: 'Kombucha1',
@@ -15,7 +15,7 @@ const kombuchaList = [
       'fruity, bright'
     ],
     brewery: 'Isaac\'s friend',
-    volume: '99oz Remaining',
+    volume: '49',
   },
   {
     drinkName: 'Kombucha2',
@@ -24,7 +24,7 @@ const kombuchaList = [
       'fruity, bright'
     ],
     brewery: 'Isaac\'s friend',
-    volume: '95oz Remaining',
+    volume: '95',
   },
   {
     drinkName: 'Kombucha3',
@@ -33,7 +33,7 @@ const kombuchaList = [
       'fruity, bright'
     ],
     brewery: 'Isaac\'s friend',
-    volume: '90oz Remaining',
+    volume: '10',
   }
 
 ];
