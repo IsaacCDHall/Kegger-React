@@ -30,9 +30,6 @@ function NotBeer(props){
           border-radius: 25%;
           background-color:rgba(244, 154, 192,0.3);
         }
-        .fa-angle-down{
-          margin-left: 20px;
-        }
 
         `}
       </style>
@@ -45,11 +42,7 @@ function NotBeer(props){
             return <p key={i}>{bev}</p>;
           })
         }
-        <p>{props.volume}</p>
-        <div>
-          <i className="fas fa-angle-up fa-2x"></i>
-          <i className="fas fa-angle-down fa-2x"></i>
-        </div>
+        <br/>
         <Counter/>
       </div>
 

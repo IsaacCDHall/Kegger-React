@@ -5,7 +5,7 @@ export default class Counter extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      count: 0
+      count: 100
     };
     this.increment = this.increment.bind(this);
     this.decrement = this.decrement.bind(this);
@@ -26,9 +26,18 @@ export default class Counter extends React.Component {
   render() {
     return (
       <div>
-        <div>count: {this.state.count}</div>
-        <button onClick={this.increment}>increment</button>
-        <button onClick={this.decrement}>decrement</button>
+        <style jsx>{`
+          .fa-angle-down{
+            margin-left: 20px;
+          }
+          i:hover{
+            color: #EF8726;
+          }
+          `}
+        </style>
+        <div>Pints Remaining: {this.state.count}</div>
+        <i onClick={this.increment} className="fas fa-angle-up fa-2x"></i>
+        <i onClick={this.decrement} className="fas fa-angle-down fa-2x"></i>
       </div>
     );
   }
