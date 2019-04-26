@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Counter from "./Counter";
+import Counter from './Counter';
 
 function NotBeer(props){
 
@@ -43,7 +43,7 @@ function NotBeer(props){
           })
         }
         <br/>
-        <Counter/>
+        <Counter initialVolume={124}/>
       </div>
 
     </div>

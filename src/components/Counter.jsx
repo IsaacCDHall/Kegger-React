@@ -1,14 +1,22 @@
 import React from "react";
 import PropTypes from 'prop-types';
+import kombuchaList from '../model/kombuchaList.js';
 
 export default class Counter extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      count: 100
+      count: props.initialVolume
+
     };
     this.increment = this.increment.bind(this);
     this.decrement = this.decrement.bind(this);
+    this.handleSelection = this.handleSelection.bind(this);
+  }
+
+  handleSelection(drink) {
+    this.setState({selected: drink});
+    console.log('new Select', this.state.selected);
   }
 
   increment() {

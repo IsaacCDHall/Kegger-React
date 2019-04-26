@@ -22,37 +22,40 @@ library.add(faStroopwafel);
 import { Switch, Route } from 'react-router-dom';
 // import Error404 from './Error404';
 
-function App(){
-  return (
-    <div>
-      <style jsx global>{`
-          *{
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-          }
-          body {
-            background-color: tan;
-            margin: 0;
-            padding: 0;
-            color: whitesmoke;
-            height: 100%;
-            width: 100%;
-          }
-        `}</style>
-      <Links/>
-      <Icon/>
-      <br/>
-      <Switch>
-        <Route exact path ='/' component={Splash}/>
-        <Route exact path ='/Login' component={Login}/>
-        <Route exact path ='/Register' component={Register} />
-        <Route exact path ='/Beer_On_Tap' component={DisplayBeer}/>
-        <Route exact path ='/Kombucha_On_Tap' component={DisplayKombucha}/>
-      </Switch>
+class App extends React.Component {
+  render(){
+    return (
+      <div>
+        <style jsx global>{`
+            *{
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+            }
+            body {
+              background-color: tan;
+              margin: 0;
+              padding: 0;
+              color: whitesmoke;
+              height: 100%;
+              width: 100%;
+            }
+            `}</style>
+          <Links/>
+          <Icon/>
+          <br/>
+          <Switch>
+            <Route exact path ='/' component={Splash}/>
+            <Route exact path ='/Login' component={Login}/>
+            <Route exact path ='/Register' component={Register} />
+            <Route exact path ='/Beer_On_Tap' component={DisplayBeer}/>
+            <Route exact path ='/Kombucha_On_Tap' component={DisplayKombucha}/>
+          </Switch>
 
-    </div>
-  );
+        </div>
+      );
+
+  }
 }
 
 
