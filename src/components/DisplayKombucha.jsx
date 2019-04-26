@@ -3,7 +3,6 @@ import Weenie from './WeenieHeader';
 import NotBeer from './KombuchaTaps';
 import kombuchaList from '../model/kombuchaList.js';
 
-
 // console.log(availableProduce);
 function DisplayKombucha(){
   return(
@@ -27,6 +26,7 @@ function DisplayKombucha(){
             name={bev.drinkName}
             details={bev.details}
             key={index}
+            volume={bev.volume}
           />
         )}
       </section>

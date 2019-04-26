@@ -3,7 +3,7 @@ const kombuchaList = [
     drinkName: 'Kombucha',
     details: [
       'Isaac\'s friend',
-      '100oz Remaining'
+      'fruity, bright'
     ],
     brewery: 'Isaac\'s friend',
     volume: '100oz Remaining',
@@ -12,7 +12,7 @@ const kombuchaList = [
     drinkName: 'Kombucha1',
     details: [
       'Isaac\'s friend',
-      '99oz Remaining'
+      'fruity, bright'
     ],
     brewery: 'Isaac\'s friend',
     volume: '99oz Remaining',
@@ -21,7 +21,7 @@ const kombuchaList = [
     drinkName: 'Kombucha2',
     details: [
       'Isaac\'s friend',
-      '95oz Remaining'
+      'fruity, bright'
     ],
     brewery: 'Isaac\'s friend',
     volume: '95oz Remaining',
@@ -30,7 +30,7 @@ const kombuchaList = [
     drinkName: 'Kombucha3',
     details: [
       'Isaac\'s friend',
-      '90oz Remaining'
+      'fruity, bright'
     ],
     brewery: 'Isaac\'s friend',
     volume: '90oz Remaining',

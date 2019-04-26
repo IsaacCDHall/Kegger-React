@@ -16,8 +16,6 @@ function DisplayBeer(){
           grid-gap: 2%;
           margin:auto;
           max-width:75vw;
-          // overflow:hidden;
-
         }
         `}
       </style>

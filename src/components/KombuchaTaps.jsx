@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import Counter from "./Counter";
 
 function NotBeer(props){
 
@@ -12,7 +12,7 @@ function NotBeer(props){
         div {
           font-family: Allerta;
           // border: 1px dotted gold;
-          
+
         }
         h3{
           text-align:center;
@@ -30,10 +30,14 @@ function NotBeer(props){
           border-radius: 25%;
           background-color:rgba(244, 154, 192,0.3);
         }
+        .fa-angle-down{
+          margin-left: 20px;
+        }
 
         `}
       </style>
       <h3>{props.name}</h3>
+
       <div className='divStyles'>
 
         {
@@ -41,7 +45,12 @@ function NotBeer(props){
             return <p key={i}>{bev}</p>;
           })
         }
-
+        <p>{props.volume}</p>
+        <div>
+          <i className="fas fa-angle-up fa-2x"></i>
+          <i className="fas fa-angle-down fa-2x"></i>
+        </div>
+        <Counter/>
       </div>
 
     </div>
@@ -50,7 +59,8 @@ function NotBeer(props){
 
 NotBeer.propTypes = {
   name: PropTypes.string.isRequired,
-  details: PropTypes.array
+  details: PropTypes.array,
+  volume: PropTypes.string
 };
 
 export  default NotBeer;
