@@ -17,6 +17,7 @@ function DisplayBeer(){
           margin:auto;
           max-width:75vw;
           // overflow:hidden;
+
         }
         `}
       </style>

@@ -29,18 +29,24 @@ function Beers(props){
           justify-content: center;
           text-align:center;
         }
+        .fa-angle-down{
+          margin-left: 20px;
+        }
 
         `}
       </style>
       <h3>{props.name}</h3>
       <div className='divStyles'>
-
         {
-          props.details.map((bev,i)=>{
-            return <p key={i}>{bev}</p>;
+          props.details.map((bev,z)=>{
+            return <p key={z}>{bev}</p>;
           })
-        }
 
+        }
+        <div>
+          <i className="fas fa-angle-up fa-2x"></i>
+          <i className="fas fa-angle-down fa-2x"></i>
+        </div>
       </div>
 
     </div>
