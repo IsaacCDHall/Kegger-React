@@ -1,32 +1,41 @@
 import React, { useState } from 'react';
-import kombuchaList from '../model/kombuchaList.js';
 import PropTypes from 'prop-types';
 
 function Counter ({initialVolume}){
-  
+
   let [count, setCount] = useState(initialVolume);
   console.log(count);
 
   return (
     <div>
       <style jsx>{`
+      div{
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+        width:98%;
+      }
       .fa-angle-down{
         margin-left: 20px;
+
       }
       i:hover{
         color: #EF8726;
       }
+      .countText{
+        font-size:130%;
+      }
       `}
       </style>
 
-      <div>Pints Remaining: {count}</div>
+      <div>Pints Remaining:<br/> <span className='countText'>{count}</span></div>
+
       <i onClick={() => setCount(count + 1)} className="fas fa-angle-up fa-2x"></i>
       <i onClick={() => setCount(count - 1)} className="fas fa-angle-down fa-2x"></i>
     </div>
   );
 }
 Counter.propTypes = {
-  initialVolume: PropTypes.number.isRequired
+  initialVolume: PropTypes.number
 };
 
 export default Counter;

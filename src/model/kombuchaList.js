@@ -2,38 +2,38 @@ const kombuchaList = [
   {
     drinkName: 'Kombucha',
     details: [
-      'Isaac\'s friend',
-      'fruity, bright'
+      'Isaac\'s friend\'s Secret Stash',
+      'fruity, bright, delicious'
     ],
     brewery: 'Isaac\'s friend',
-    volume: '124',
+    volume: 124,
   },
   {
     drinkName: 'Kombucha1',
     details: [
-      'Isaac\'s friend',
-      'fruity, bright'
+      'Dumpster behind Whole Foods',
+      'Sour, dark, enigimatic elixir'
     ],
     brewery: 'Isaac\'s friend',
-    volume: '49',
+    volume: 49,
   },
   {
     drinkName: 'Kombucha2',
     details: [
-      'Isaac\'s friend',
-      'fruity, bright'
+      'HouseMade',
+      'Smells good for a Kombucha'
     ],
     brewery: 'Isaac\'s friend',
-    volume: '95',
+    volume: 95,
   },
   {
     drinkName: 'Kombucha3',
     details: [
-      'Isaac\'s friend',
-      'fruity, bright'
+      'Anonymous Donor',
+      'Makes me feel alive'
     ],
     brewery: 'Isaac\'s friend',
-    volume: '10',
+    volume: 10,
   }
 
 ];

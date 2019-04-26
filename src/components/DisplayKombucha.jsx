@@ -2,7 +2,7 @@ import Weenie from './WeenieHeader';
 import NotBeer from './KombuchaTaps';
 import kombuchaList from '../model/kombuchaList.js';
 import Counter from './Counter';
-import React, { useState } from 'react';
+import React from 'react';
 
 // console.log(availableProduce);
 function DisplayKombucha(){
@@ -18,19 +18,26 @@ function DisplayKombucha(){
           max-width:75vw;
           margin:auto;
           // overflow:hidden;
+          text-align:center;
+        }
+        .leftNut{
+          text-align: center;
         }
         `}
       </style>
       <Weenie/>
       <section>
-        {kombuchaList.map((bev, index) =>
-          <NotBeer
-            name={bev.drinkName}
-            details={bev.details}
-            key={index}
-            volume={bev.volume}
-          />
-        )}
+        <div className='leftNut'>
+          {kombuchaList.map((bev, index) =>
+            <NotBeer
+              name={bev.drinkName}
+              details={bev.details}
+              key={index}
+              volume={bev.volume}
+              />
+          )}
+
+        </div>
       </section>
     </div>
 

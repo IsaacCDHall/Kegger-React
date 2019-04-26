@@ -17,33 +17,54 @@ function NotBeer(props){
           text-align:center;
           color: #29A0C3;
           text-transform: uppercase;
-          font-size: 125%;
+          font-size: 135%;
         }
 
         .divStyles {
-          display: flex;
-          flex-flow: column wrap;
-          justify-content: center;
-          text-align:center;
+
           border: 2px solid #3CC330;
           border-radius: 25%;
           background-color:rgba(244, 154, 192,0.3);
+          display:flex;
+          flex-flow: row;
+          justify-content: space-around;
+          align-items: center;
+          justify-content; center;
         }
+        .contentBox{
+          display:flex;
+          flex-flow: column wrap;
+          width:auto;
 
+        }
+        .styleItems{
+
+        }
+        .counterBox{
+          display:flex;
+          width:auto;
+
+          align-items: center;
+          justify-content; center;
+        }
         `}
       </style>
       <h3>{props.name}</h3>
       <div className='divStyles'>
+        <div className='contentBox'>
+          {
+            props.details.map((bev,i)=>{
+              return <p className='styleItems' key={i}>{bev}</p>;
+              })
+            }
+        </div>
 
-        {
-          props.details.map((bev,i)=>{
-            return <p key={i}>{bev}</p>;
-          })
-        }
-        <br/>
+        <div className='counterBox'>
           <Counter
             initialVolume={props.volume}
-          />
+            />
+        </div>
+
       </div>
 
     </div>
