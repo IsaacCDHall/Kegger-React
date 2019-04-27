@@ -55,14 +55,14 @@ function NotBeer(props){
           {
             props.details.map((bev,i)=>{
               return <p className='styleItems' key={i}>{bev}</p>;
-              })
-            }
+            })
+          }
         </div>
 
         <div className='counterBox'>
           <Counter
             initialVolume={props.volume}
-            />
+          />
         </div>
 
       </div>

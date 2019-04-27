@@ -34,7 +34,7 @@ function DisplayKombucha(){
               details={bev.details}
               key={index}
               volume={bev.volume}
-              />
+            />
           )}
 
         </div>
