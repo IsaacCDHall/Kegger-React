@@ -22,14 +22,18 @@ This is my most recent project! I have created an original design inspired by th
          - [x] Logo
          - [x] Splash Page
          - [x] Grid System
+         - [x] Flex inside Grid
          - [ ] Login Authentication
          - [x] Readme lookin' nice
          - [x] Routing
          - [x] Inital Styles
+         - [x] State Management
+         
 
  __Stretch Goals :__
 
          - [ ] DRY-est CODE
+         - [x] React Hook
          - [ ] Svg animation with anime.js
          - [ ] Upload custom audio
          - [ ] PWA
