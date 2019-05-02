@@ -46,15 +46,6 @@ function Links() {
       <Link to="/" style={{ textDecoration: 'none' }}>
         <a>Home</a>
       </Link>
-      <Link to="/Login" style={{ textDecoration: 'none' }}>
-        <a>Login</a>
-      </Link>
-      <Link to="/Register" style={{ textDecoration: 'none' }}>
-        <a>Register</a>
-      </Link>
-      <Link to="/Beer_On_Tap" style={{ textDecoration: 'none' }}>
-        <a>Beer</a>
-      </Link>
       <Link to="/Kombucha_On_Tap" style={{ textDecoration: 'none' }}>
         <a>Kombucha</a>
       </Link>
@@ -65,15 +56,12 @@ function Links() {
   );
 }
 export default Links;
-// <Link to="/displayproduce" style={{ textDecoration: 'none' }}>
-// <a>#FAQ</a>
+// <Link to="/Login" style={{ textDecoration: 'none' }}>
+//   <a>Login</a>
 // </Link>
-// <Link to="/displayproduce" style={{ textDecoration: 'none' }}>
-// <a>#Apply</a>
+// <Link to="/Register" style={{ textDecoration: 'none' }}>
+//   <a>Register</a>
 // </Link>
-// <Link to="/displayproduce" style={{ textDecoration: 'none' }}>
-// <a>#Vendors</a>
-// </Link>
-// <Link to="/displayproduce" style={{ textDecoration: 'none' }}>
-// <a>#Map</a>
+// <Link to="/Beer_On_Tap" style={{ textDecoration: 'none' }}>
+//   <a>Beer</a>
 // </Link>
