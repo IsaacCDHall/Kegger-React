@@ -46,14 +46,14 @@
 // export default DisplayKombucha;
 
 import Weenie from './WeenieHeader';
-import NotBeer from './KombuchaTaps';
+import KombuchaTap from './KombuchaTaps';
 import kombuchaList from '../model/kombuchaList.js';
 import Counter from './Counter';
 import React from 'react';
 
 // console.log(availableProduce);
-function DisplayKombucha(){
-  console.log(Counter);
+function DisplayKombucha(props){
+  console.log(props);
   return(
     <div>
       <style jsx>{`
@@ -76,11 +76,14 @@ function DisplayKombucha(){
       <section>
         <div className='mapFunc'>
           {kombuchaList.map((bev, index) =>
-            <NotBeer
+            <KombuchaTap
               name={bev.drinkName}
               details={bev.details}
+              id={bev.id}
               key={index}
               volume={bev.volume}
+              handleSellPint={props.handleSellPint}
+              handleDeleteKeg={props.handleDeleteKeg}
             />
           )}
 
