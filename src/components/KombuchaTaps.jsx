@@ -86,6 +86,13 @@ import React, { useState } from 'react';
 
 function NotBeer(props){
 
+  function sellPint(){
+    props.handleSellPint({id: props.id});
+  }
+  function deleteKeg(){
+    props.handleDeleteKeg({id: props.id});
+    console.log(props)
+  }
   console.log(props);
   return (
     <div>
@@ -128,6 +135,9 @@ function NotBeer(props){
           align-items: center;
           justify-content: center;
         }
+        .buttonStyles{
+          border: 1px solid black;
+        }
       `}
       </style>
       <h3>{props.name}</h3>
@@ -141,10 +151,16 @@ function NotBeer(props){
         </div>
 
         <div className='counterBox'>
+          <p>
+            hook-edit >
+          </p>
           <Counter
             initialVolume={props.volume}
           />
+          <p>Edit-state ></p>
+          <i onClick={sellPint} className="fas fa-angle-down fa-2x"></i>
         </div>
+        <i onClick ={deleteKeg} className="far fa-trash-alt fa-2x"></i>
 
       </div>
 
@@ -156,7 +172,8 @@ function NotBeer(props){
 NotBeer.propTypes = {
   name: PropTypes.string.isRequired,
   details: PropTypes.array,
-  volume: PropTypes.number
+  volume: PropTypes.number,
+  id: PropTypes.number
 };
 
 export default NotBeer;
