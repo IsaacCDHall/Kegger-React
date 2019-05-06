@@ -7,6 +7,7 @@ const kombuchaList = [
     ],
     brewery: 'Isaac\'s friend',
     volume: 124,
+    id: 0,
   },
   {
     drinkName: 'Kombucha1',
@@ -16,6 +17,7 @@ const kombuchaList = [
     ],
     brewery: 'Isaac\'s friend',
     volume: 49,
+    id: 1,
   },
   {
     drinkName: 'Kombucha2',
@@ -25,6 +27,7 @@ const kombuchaList = [
     ],
     brewery: 'Isaac\'s friend',
     volume: 95,
+    id: 2,
   },
   {
     drinkName: 'Kombucha3',
@@ -34,6 +37,7 @@ const kombuchaList = [
     ],
     brewery: 'Isaac\'s friend',
     volume: 10,
+    id: 3,
   }
 
 ];
