@@ -67,14 +67,14 @@ function DisplayKombucha(){
           // overflow:hidden;
           text-align:center;
         }
-        .leftNut{
+        .mapFunc{
           text-align: center;
         }
       `}
       </style>
       <Weenie/>
       <section>
-        <div className='leftNut'>
+        <div className='mapFunc'>
           {kombuchaList.map((bev, index) =>
             <NotBeer
               name={bev.drinkName}
