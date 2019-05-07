@@ -46,6 +46,7 @@ class App extends Component {
         console.log(newStateZ[i].volume);
       };
     };
+    console.log(kombucha)
     this.setState({kombuchaList: newStateZ});
 
   };
